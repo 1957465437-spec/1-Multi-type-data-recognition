@@ -1,0 +1,7 @@
+streamlit
+pandas
+openai
+openpyxl
+xlsxwriter
+certifi
+chardet
