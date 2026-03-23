@@ -72,7 +72,7 @@ def get_prediction(text, client, mode):
     
     for attempt in range(3):
         try:
-            completion = client.chat.completion.create(
+            completion = client.chat.completions.create(
                 model=MODEL_NAME,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
