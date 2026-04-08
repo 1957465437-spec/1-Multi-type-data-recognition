@@ -76,7 +76,7 @@ def get_prediction(text, client, mode):
                     {"role": "user", "content": f"请审计以下内容：\n{str(text)}"}
                 ],
                 response_format={"type": "json_object"},
-                temperature=0.1
+                temperature=0.7
             )
             res = json.loads(completion.choices[0].message.content)
             
